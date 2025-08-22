@@ -1,0 +1,15 @@
+const globalData = {
+  absheron:
+    "https://raw.githubusercontent.com/ZekoIzmayilov/geoAZ/main/Absheron.geojson",
+  baku: "https://raw.githubusercontent.com/ZekoIzmayilov/geoAZ/main/Baku.geojson",
+  ganja:
+    "https://raw.githubusercontent.com/ZekoIzmayilov/geoAZ/main/Ganja.geojson",
+  sumgayit:
+    "https://raw.githubusercontent.com/ZekoIzmayilov/geoAZ/main/Sumgayit.geojson",
+  mingachevir:
+    "https://raw.githubusercontent.com/ZekoIzmayilov/geoAZ/main/Mingachevir.geojson",
+  nakhchivan:
+    "https://raw.githubusercontent.com/ZekoIzmayilov/geoAZ/main/Nakhchivan.geojson",
+  // Əgər repository-də Azərbaycan hərfləri ilə fayllar varsa:
+  // Alternativ URL-lər manual encode edilmiş halda
+};
