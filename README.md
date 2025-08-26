@@ -1,2 +1,0 @@
-# geoAZ
-az-geo-data
