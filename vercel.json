@@ -4,12 +4,35 @@
     {
       "src": "public/**/*",
       "use": "@vercel/static"
+    },
+    {
+      "src": "*.pbf",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
+      "src": "/map-data",
+      "dest": "/azerbaijan-latest.osm.pbf"
+    },
+    {
       "src": "/(.*)",
       "dest": "/public/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/map-data",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/octet-stream"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ]
 }
