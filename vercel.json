@@ -8,27 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/map-data",
+      "src": "/azerbaijan-latest.osm.pbf",
       "dest": "/public/azerbaijan-latest.osm.pbf"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/map-data",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/octet-stream"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
     }
   ]
 }
