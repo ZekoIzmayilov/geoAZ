@@ -10,6 +10,10 @@
     {
       "src": "/map-data",
       "dest": "/public/azerbaijan-latest.osm.pbf"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
     }
   ],
   "headers": [
