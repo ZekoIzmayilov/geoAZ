@@ -4,20 +4,12 @@
     {
       "src": "public/**/*",
       "use": "@vercel/static"
-    },
-    {
-      "src": "*.pbf",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/map-data",
-      "dest": "/azerbaijan-latest.osm.pbf"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
+      "dest": "/public/azerbaijan-latest.osm.pbf"
     }
   ],
   "headers": [
